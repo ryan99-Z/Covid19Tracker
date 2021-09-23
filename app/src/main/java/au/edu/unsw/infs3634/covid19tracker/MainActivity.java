@@ -2,10 +2,7 @@ package au.edu.unsw.infs3634.covid19tracker;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -13,24 +10,5 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        final Button aimBt = findViewById(R.id.main_gotoDetail);
-        aimBt.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, DetailActivity.class);
-                intent.putExtra("userData","Hi,wellcome");
-                startActivity(intent);
-
-            }
-        });
-
-
-
-
-
-
-
-
     }
 }
